@@ -8,12 +8,14 @@ import { CourseServiceClient } from './services/CourseServiceClient';
 import { LessonServiceClient} from './services/LessonServiceClient';
 import { ModuleServiceClient} from './services/ModuleServiceClient';
 import { CourseViewerComponent } from './course-viewer/course-viewer.component';
+import { ModuleListComponent } from './module-list/module-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseTableComponent,
-    CourseViewerComponent
+    CourseViewerComponent,
+    ModuleListComponent
   ],
   imports: [
     BrowserModule,

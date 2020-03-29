@@ -1,0 +1,32 @@
+<h2 class = "script">Whiteboard</h2>
+
+
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <h4>Total Number of Course: {{courses.length}}</h4>
+  <div className="table-responsive-sm">
+
+    <table id = customers>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Last modified</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let course of courses">
+      <tr>
+       <td>
+         <a href="/table/courses{{course._id}}">
+         {{course.title}}
+         </a>
+       </td>
+        <td>
+          <p>
+            {{course._updatedAt}}
+          </p>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</nav>

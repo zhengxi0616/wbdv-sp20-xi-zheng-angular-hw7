@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "wbdv-sp20-xi-zheng-angular"
+    }
+  },
+  "defaultProject": "wbdv-sp20-xi-zheng-angular",
+  "cli": {
+    "analytics": false
+  }
 }

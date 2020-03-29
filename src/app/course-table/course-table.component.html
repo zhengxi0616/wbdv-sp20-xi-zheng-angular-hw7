@@ -1,8 +1,6 @@
 <h2 class = "script">Whiteboard</h2>
 
-
-
-<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+<div class="col-md-3">
   <h4>Total Number of Course: {{courses.length}}</h4>
   <div className="table-responsive-sm">
 
@@ -13,10 +11,11 @@
           <th>Last modified</th>
         </tr>
       </thead>
-      <tbody *ngFor="let course of courses">
-      <tr>
+      <tbody>
+      <tr *ngFor="let course of courses"
+        [class]="{'active':course._id === courseId}" >
        <td>
-         <a href="/table/courses{{course._id}}">
+         <a routerLink="/table/courses//{{course._id}}/modules">
          {{course.title}}
          </a>
        </td>
@@ -29,4 +28,6 @@
       </tbody>
     </table>
   </div>
-</nav>
+</div>
+
+

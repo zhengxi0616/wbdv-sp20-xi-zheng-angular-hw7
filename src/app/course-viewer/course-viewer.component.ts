@@ -14,12 +14,13 @@ export class CourseViewerComponent implements OnInit {
               private route: ActivatedRoute) {
   }
 
-  course: {}
+  course = { title: '' }
+  courseId = ''
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      const courseId = params._id;
-      this.service.findCourseById(courseId)
+      this.courseId = params.courseId;
+      this.service.findCourseById(params.courseId)
         .then(course => this.course = course);
     });
   }

@@ -3,7 +3,7 @@
 #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 10%;
+  width: 60%;
 }
 
 #customers td, #customers th {
@@ -19,5 +19,5 @@
 }
 
 .active {
-  background: #ffff44;
+  background: Gainsboro;
 }

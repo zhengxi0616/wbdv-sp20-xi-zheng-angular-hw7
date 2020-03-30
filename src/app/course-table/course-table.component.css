@@ -10,7 +10,7 @@
 #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 200%;
 }
 
 #customers td, #customers th {
@@ -22,10 +22,10 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+  background-color: lightsteelblue;
   color: white;
 }
 
 .active {
-  background: #ffff44;
+  background: Gainsboro;
 }

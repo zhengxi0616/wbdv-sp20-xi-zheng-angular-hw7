@@ -8,6 +8,7 @@ const routes: Routes = [
   {path: 'table/courses', component: CourseTableComponent},
   {path: 'table/courses/:courseId', component: CourseViewerComponent},
   {path: 'table/courses/:courseId/modules/:moduleId', component: CourseViewerComponent},
+  {path: 'table/courses/:courseId/modules/:moduleId/lessons/:lessonId', component: CourseViewerComponent},
 ];
 
 @NgModule({

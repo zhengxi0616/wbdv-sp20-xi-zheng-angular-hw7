@@ -15,7 +15,7 @@
       <tr *ngFor="let course of courses"
         [class]="{'active':course._id === courseId}" >
        <td>
-         <a routerLink="/table/courses//{{course._id}}/modules">
+         <a routerLink="/table/courses/{{course._id}}">
          {{course.title}}
          </a>
        </td>

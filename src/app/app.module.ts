@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import { CourseTableComponent } from './course-table/course-table.component';
 import { CourseServiceClient } from './services/CourseServiceClient';
 import { LessonServiceClient} from './services/LessonServiceClient';
@@ -19,6 +20,7 @@ import { ModuleListComponent } from './module-list/module-list.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
   ],
   providers: [CourseServiceClient, LessonServiceClient, ModuleServiceClient],
